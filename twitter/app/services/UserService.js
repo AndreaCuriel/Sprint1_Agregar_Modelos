@@ -15,6 +15,10 @@ class UserService {
 
     return arrayObj;
   }
+
+  static updateUserUsername(obj, newUsername) {
+    return (obj.username = newUsername);
+  }
 }
 
 module.exports = UserService;
