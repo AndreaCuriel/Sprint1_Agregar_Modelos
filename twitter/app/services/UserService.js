@@ -5,6 +5,16 @@ class UserService {
   static create(id, username, name) {
     return new User(id, username, name, "Sin bio"); //intancia un obejto tipo User
   }
+
+  static getInfo(obj) {
+    const arrayObj = [];
+    arrayObj[0] = obj.id;
+    arrayObj[1] = obj.username;
+    arrayObj[2] = obj.name;
+    arrayObj[3] = "Sin bio";
+
+    return arrayObj;
+  }
 }
 
 module.exports = UserService;

@@ -1,7 +1,7 @@
 const UserService = require("./../../app/services/UserService");
 
 describe("Test for UserService", () => {
-  test("1. Create a new user using the Userservice", () => {
+  test(" Requerimiento 1. Create a new user using the Userservice", () => {
     const user = UserService.create(1, "AndreaCuriel", "Andrea");
 
     //Validar
@@ -11,7 +11,7 @@ describe("Test for UserService", () => {
     expect(user.bio).not.toBeUndefined();
   });
 
-  test("2. Create static metodo getInfo", () => {
+  test("Requerimeinto 2. Create static metodo getInfo", () => {
     const user = UserService.create(1, "AndreaCuriel", "Andrea");
     const userInfoInList = UserService.getInfo(user);
     expect(userInfoInList[0]).toBe(1);
