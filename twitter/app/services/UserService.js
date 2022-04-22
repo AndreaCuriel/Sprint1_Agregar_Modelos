@@ -6,7 +6,7 @@ class UserService {
     return new User(id, username, name, "Sin bio"); //intancia un obejto tipo User
   }
 
-  static getInfo(obj) {
+  /* static getInfo(obj) {
     const arrayObj = [];
     arrayObj[0] = obj.id;
     arrayObj[1] = obj.username;
@@ -14,6 +14,10 @@ class UserService {
     arrayObj[3] = "Sin bio";
 
     return arrayObj;
+  }*/
+
+  static getInfo(obj) {
+    return Object.values(obj);
   }
 
   static updateUserUsername(obj, newUsername) {
